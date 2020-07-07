@@ -1,0 +1,22 @@
+---
+# General Information
+info:
+  name: kubeline-service-1
+  namespace: kubeline
+  git_repository: https://github.com/Kubeline/service-1
+
+# Build details
+build:
+  dockerfile: Dockerfile # Name of docker file. If not specified, we'll use Dockerfile.
+  build_image: islamicnetwork/php74 # We'll clone and run any build commands in this image
+  build_command: composer install && vendor/bin/phpunit # The command to run before building the docker image
+  dockerhub_repository_name: kubeline/service-1 # Docker Hub
+
+# Deployment
+deploy:
+  production_ready: no
+
+# Resources - other things that are tied to this build, like RDS instances, Route 53 config, etc.
+# resources:
+#   - module1
+#   - module2
