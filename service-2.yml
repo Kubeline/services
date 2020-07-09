@@ -3,7 +3,7 @@
 info:
   name: kubeline-service-2
   namespace: kubeline
-  git_repository: https://github.com/Kubeline/service-2
+  git_repository: https://github.com/kubeline/service-2
 
 # Build details
 build:
